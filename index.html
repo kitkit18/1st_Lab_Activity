@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .login-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+            gap: 15px;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> Natures Gallery</h1>
+        <a href="#" class="login-btn">Login</a>
+    </header>
+
+    <div class="gallery">
+        <img src="image.jpg" alt="Image 1">
+        <img src="image1.jpg" alt="Image 2">
+        <img src="image2.jpg" alt="Image 3">
+        <img src="image1.jpg" alt="Image 4">
+        <img src="image.jpg" alt="Image 5">
+        <img src="image1.jpg" alt="Image 6">
+        <img src="image2.jpg" alt="Image 7">
+        <img src="image1.jpg" alt="Image 8">
+        <img src="image.jpg" alt="Image 9">
+    </div>
+
+    <footer>
+        <p>Simple Natures Gallery</p>
+    </footer>
+
+</body>
+</html>
